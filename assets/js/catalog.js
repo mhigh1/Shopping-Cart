@@ -44,7 +44,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '5',
+    itemNo: '6',
     name: 'Tuba',
     description: '',
     type: 'Instrument',
@@ -53,7 +53,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '6',
+    itemNo: '7',
     name: 'Piccolo',
     description: '',
     type: 'Instrument',
@@ -62,7 +62,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '7',
+    itemNo: '8',
     name: 'Flute',
     description: '',
     type: 'Instrument',
@@ -71,7 +71,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '8',
+    itemNo: '9',
     name: 'Clarinet',
     description: '',
     type: 'Instrument',
@@ -80,7 +80,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '9',
+    itemNo: '10',
     name: 'Bass Clarinet',
     description: '',
     type: 'Instrument',
@@ -89,7 +89,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '10',
+    itemNo: '11',
     name: 'Alto Clarinet',
     description: '',
     type: 'Instrument',
@@ -98,7 +98,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '11',
+    itemNo: '12',
     name: 'Oboe',
     description: '',
     type: 'Instrument',
@@ -107,7 +107,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '12',
+    itemNo: '13',
     name: 'Alto Saxaphone',
     description: '',
     type: 'Instrument',
@@ -116,7 +116,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '13',
+    itemNo: '14',
     name: 'Tenor Saxaphone',
     description: '',
     type: 'Instrument',
@@ -125,7 +125,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '14',
+    itemNo: '15',
     name: 'Snare Drum',
     description: '',
     type: 'Instrument',
@@ -134,7 +134,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '15',
+    itemNo: '16',
     name: 'Bass Drum',
     description: '',
     type: 'Instrument',
@@ -143,7 +143,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '16',
+    itemNo: '17',
     name: 'Tenor Drum',
     description: '',
     type: 'Instrument',
@@ -152,7 +152,7 @@ const catalog = [{
     photo: 'holder-254x180.png'
 },
 {
-    itemNo: '17',
+    itemNo: '18',
     name: 'Timpani Drum (Set)',
     description: '',
     type: 'Instrument',

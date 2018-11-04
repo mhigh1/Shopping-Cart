@@ -1,18 +1,15 @@
-// $('#btnCart').on('click', function() {
-//     $('#cart').toggle('d-none');
-// });
-
 // Create an array of unique values from array of objects;
 //const categories = [...new Set(catalog.map(item => item.category))]
-
-
-$(function(){
-    renderCatalog();
-});
-
-
 const arrCart = [];
 
+const lookupItemByProperty = function(array, property, value) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i][property] === value) {
+            return array[i];
+        }
+    }
+    return null;
+}
 
 const tmplFilterCard = function() {
     return `
@@ -52,14 +49,18 @@ const renderCatalog = function(array) {
 }
 
 const addItemToCart = function(itemId) {
-    let pos = catalog.map(item => item.itemNo).indexOf(itemId)
-    let item = catalog[pos];
+    let item = catalog.find(item => item.itemNo === String(itemId));
+    console.log(item);
     $('#cart').append(`<button>${item.name}</buttion>`);
 }
 
+// Document Ready
+$(function(){
+    renderCatalog();
 
-// CALLBACK FUNCTIONS //
-
-$('button').on('click', function() {
-    console.log('click');
+    // CALLBACK FUNCTIONS //
+    $('#catalog button').on('click', function() {
+        console.log('click');
+        addItemToCart($(this).data('itemId'));
+    });
 });
