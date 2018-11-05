@@ -1,5 +1,11 @@
 // Create an array of unique values from array of objects;
 //const categories = [...new Set(catalog.map(item => item.category))]
+// Document Ready
+$(function(){
+    renderCatalog();
+    renderCart();
+});
+
 const arrCart = [];
 
 const lookupItemByProperty = function(array, property, value) {
@@ -48,19 +54,45 @@ const renderCatalog = function(array) {
     }
 }
 
-const addItemToCart = function(itemId) {
-    let item = catalog.find(item => item.itemNo === String(itemId));
-    console.log(item);
-    $('#cart').append(`<button>${item.name}</buttion>`);
+
+// Render Shopping Cart
+const renderCart = function(array) {
+    if (!array) {
+        array = arrCart;
+    }
+    $('#cart').empty();
+    if(!array.length) {
+        $('#cart').html(`<span class="font-italic">Your cart is empty.</span>`);
+    } else {
+        for(let i = 0; i < array.length; i++) {
+            $('#cart').append(`<button class="btn btn-outline-primary" data-item-id="${array[i].itemNo}">${array[i].name}</buttion>`);
+        }
+    }
 }
 
-// Document Ready
-$(function(){
-    renderCatalog();
+// Add an Item to Cart
+const addItemToCart = function(itemId) {
+    let item = catalog.find(item => item.itemNo === String(itemId));
+    arrCart.push(item);
+    renderCart();
+}
 
-    // CALLBACK FUNCTIONS //
-    $('#catalog button').on('click', function() {
-        console.log('click');
-        addItemToCart($(this).data('itemId'));
-    });
+// Remove an Item from the Cart
+const removeItemFromCart = function(itemId) {
+    let pos = arrCart.findIndex(item => item.itemNo === String(itemId));
+    arrCart.splice(pos, 1);
+    renderCart();
+}
+
+// CALLBACK FUNCTIONS //
+$('#catalog').on('click', 'button', function() {
+    addItemToCart($(this).data('itemId'));
+    if($('#cart').hasClass('show') === false) {
+        $('#btnCart').trigger('click');
+    }
 });
+
+$('#cart').on('click', 'button', function() {
+    removeItemFromCart($(this).data('itemId'));
+});
+
