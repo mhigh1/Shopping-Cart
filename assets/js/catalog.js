@@ -6,7 +6,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Brass',
     price: '2700',
-    photo: 'holder-254x180.png'
+    photo: 'trumpet_500x500.jpg'
 },
 {
     itemNo: '2',
@@ -16,7 +16,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Brass',
     price: '3400',
-    photo: 'holder-254x180.png'
+    photo: 'alto-trombone_500x500.jpg'
 },
 {
     itemNo: '3',
@@ -26,7 +26,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Brass',
     price: '4500',
-    photo: 'holder-254x180.png'
+    photo: 'bass-trombone_500x500.jpg'
 },
 {
     itemNo: '4',
@@ -36,7 +36,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Brass',
     price: '2000',
-    photo: 'holder-254x180.png'
+    photo: 'fhorn_500x500.jpg'
 },
 {
     itemNo: '5',
@@ -46,7 +46,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Brass',
     price: '2400',
-    photo: 'holder-254x180.png'
+    photo: 'euphonium_500x500.jpg'
 },
 {
     itemNo: 'YBB-1',
@@ -56,7 +56,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Brass',
     price: '3800',
-    photo: 'holder-254x180.png'
+    photo: 'tuba_250x250.jpg'
 },
 {
     itemNo: 'YPC-32',
@@ -66,7 +66,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '1390',
-    photo: 'holder-254x180.png'
+    photo: 'piccolo_500x500.jpg'
 },
 {
     itemNo: 'BPC-1287',
@@ -76,7 +76,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '745',
-    photo: 'holder-254x180.png'
+    photo: 'alt-piccolo_250x250.jpg'
 },
 {
     itemNo: '8',
@@ -86,7 +86,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '980',
-    photo: 'holder-254x180.png'
+    photo: 'flute_500x500.jpg'
 },
 {
     itemNo: '9',
@@ -96,7 +96,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '450',
-    photo: 'holder-254x180.png'
+    photo: 'clarinet_500x500.jpg'
 },
 {
     itemNo: '10',
@@ -106,7 +106,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '1200',
-    photo: 'holder-254x180.png'
+    photo: 'bass-clarinet_250x250.jpg'
 },
 {
     itemNo: '11',
@@ -116,7 +116,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '600',
-    photo: 'holder-254x180.png'
+    photo: 'alto-clarinet_250x250.jpg'
 },
 {
     itemNo: '12',
@@ -126,7 +126,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '990',
-    photo: 'holder-254x180.png'
+    photo: 'oboe_500x500.jpg'
 },
 {
     itemNo: '13',
@@ -136,7 +136,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '1500',
-    photo: 'holder-254x180.png'
+    photo: 'alto-saxaphone_500x500.jpg'
 },
 {
     itemNo: '14',
@@ -146,7 +146,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Woodwind',
     price: '2800',
-    photo: 'holder-254x180.png'
+    photo: 'tenor-saxaphone_500x500.jpg'
 },
 {
     itemNo: '15',
@@ -156,7 +156,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Percussion',
     price: '708',
-    photo: 'holder-254x180.png'
+    photo: 'snare-drum_500x500.jpg'
 },
 {
     itemNo: '16',
@@ -166,7 +166,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Percussion',
     price: '400',
-    photo: 'holder-254x180.png'
+    photo: 'bass-drum_500x500.jpg'
 },
 {
     itemNo: '17',
@@ -176,7 +176,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Percussion',
     price: '950',
-    photo: 'holder-254x180.png'
+    photo: 'tenor-drum-quad_250x250.jpg'
 },
 {
     itemNo: '18',
@@ -186,7 +186,7 @@ const catalog = [{
     type: 'Instrument',
     category: 'Percussion',
     price: '250',
-    photo: 'holder-254x180.png'
+    photo: 'alt-bass-drum_500x500.jpg'
 },
 {
     itemNo: '19',
@@ -196,5 +196,5 @@ const catalog = [{
     type: 'Instrument',
     category: 'Percussion',
     price: '6200',
-    photo: 'holder-254x180.png'
+    photo: 'timpani-drum-set_500x500.jpg'
 }];
