@@ -7,52 +7,28 @@
     <link rel="shortcut icon" type="image/x-icon" href="#">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Shopping Cart</title>
 </head>
 <body>
 <header class="mb-4 bg-dark">
     <div class="container">
-        <nav class="navbar navbar-exapnd-md navbar-dark">
-            <button id="btnCart" type="button" data-toggle="collapse" data-target="#cart" class="btn btn-outline-light float-right"><i class="fas fa-shopping-cart pr-2"></i>Cart</button>
+        <nav class="navbar navbar-exapnd-md navbar-dark justify-content-end px-0">
+            <button id="btnCart" type="button" data-toggle="collapse" data-target="#cart" class="btn btn-outline-light"><i class="fas fa-shopping-cart pr-2"></i>Cart</button>
         </nav>
     </div>
 </header>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3">
-            <div class="bg-light p-2 border">Refine Selection:</div>
-
-                <div class="border border-top-0">
-                    <div class="filter-header p-2 text-primary font-weight-bold">
-                        <a data-toggle="collapse" data-target="#filterGroup1">Instrument</a>
-                    </div>
-                    <div id="filterGroup1" class="collapse show">
-                        <ul class="list-unstyled pl-3">
-                            <li><input type="checkbox"><span class="pl-1">Brass</span></li>
-                            <li><input type="checkbox"><span class="pl-1">Woodwinds</span></li>
-                            <li><input type="checkbox"><span class="pl-1">Percussion</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="border border-top-0">
-                    <div class="filter-header p-2 text-primary font-weight-bold">
-                        <a data-toggle="collapse" data-target="#filterGroup2">Price</a>
-                    </div>
-                    <div id="filterGroup2" class="collapse show">
-                        <ul class="list-unstyled pl-3">
-                            <li><input type="checkbox"><span class="pl-1">Under $500</span></li>
-                            <li><input type="checkbox"><span class="pl-1">$500 - $800</span></li>
-                            <li><input type="checkbox"><span class="pl-1">Over $800</span></li>
-                        </ul>
-                    </div>
-                </div>
-
+        <div id="refinements" class="col-sm-3">
+            <!-- REFINEMENT CARDS HERE -->
         </div>
         <div class="col-sm-9 pl-0">
-            <div id="cart" class="border border mb-3 p-3 collapse">
+            <div id="cart" class="border mb-3 p-3 collapse">
                 <!-- CART CONTENTS HERE -->
             </div>
-            <div id="refinements" class="d-none mb-3">
+            <div id="message-center"></div>
+            <div id="refiners" class="d-none mb-3 p-2 border bg-light">
                 <!-- REFINEMENTS HERE -->
             </div>
             <div id="catalog" class="row">

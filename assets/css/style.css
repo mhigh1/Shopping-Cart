@@ -1,0 +1,14 @@
+.refiner {
+    font-size: .85em !important;
+}
+
+.refiner:hover {
+    color: #007bff !important;
+    cursor:  pointer;
+}
+
+#cart button:hover {
+    color: #fff !important;
+    border-color: #dc3545 !important;
+    background-color: #dc3545 !important;
+}
