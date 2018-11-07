@@ -48,6 +48,10 @@ const renderCatalog = function(array) {
         let itemPhoto = array[i].photo;
         $('#catalog').append(tmplProductCard(itemNo,itemName,itemMfg,itemPhoto));
     }
+
+    if(array.length === 0) {
+        $('#message-center').html(`<div class="px-3 pb-3 font-italic text-info small"><i class="fas fa-exclamation-triangle pr-1"></i>No items match your criteria, please adjust your selections.</div>`);
+    }
 }
 
 const renderFilterCards = function() {
